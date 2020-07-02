@@ -1,12 +1,13 @@
 import React from "react";
+import {withRouter} from "react-router-dom";
 import "./menu-item.styles.scss";
-function menuItem({title,imgUrl,size}){
+function MenuItem({title,imageUrl,size,history,match,linkUrl}){
     return (
-        <div className={`  ${size} menu-item`}>
+        <div className={`  ${size} menu-item`} onClick={()=>history.push(`${match}${linkUrl}`)}>
         <div style={{
-            backgroundImage: `url(${imgUrl})`
+            backgroundImage: `url(${imageUrl})`
         }} className="background-image"></div>
-        <div className="content">
+        <div className="content" >
           <h1 className="title">{title.toUpperCase()}</h1>
           <span className="subtitle">SHOP NOW </span>
         </div>
@@ -14,4 +15,4 @@ function menuItem({title,imgUrl,size}){
     );
 }
 
-export default menuItem;
+export default withRouter(MenuItem);
