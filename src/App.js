@@ -5,6 +5,7 @@ import "./pages/homepage/homepage.styles.scss";
 import Homepage from "./pages/homepage/homepage.component";
 import Shop from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
+import Authentication from "./pages/authentication/authentication";
 function App() {
   return (
     <div>
@@ -15,6 +16,8 @@ function App() {
       <Route exact path="/" component={Homepage}/>
       
       <Route exact path="/shop" component={Shop}/>
+      
+      <Route exact path="/authentication" component={Authentication}/>
       </Switch>
       </BrowserRouter>
       
