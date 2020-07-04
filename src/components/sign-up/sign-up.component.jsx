@@ -23,8 +23,9 @@ class Signup extends React.Component{
             event.preventDefault();
 
             const {displayName,email,password,confirmPassword}=this.state;
-
-            if(password!==confirmPassword)
+            if(password.length<6)
+            alert("Please enter a password of length greater than 6");
+            else if(password!==confirmPassword)
             alert("Passwords don't match");
             else
             {
@@ -74,7 +75,7 @@ class Signup extends React.Component{
                         <FormInput 
                         type="password"
                         name= "password"
-                        label="Password"
+                        label="Password (should contain atleast 6 letters)"
                         value={password}
                         onChange={this.handleChange}
                         required
