@@ -5,14 +5,20 @@
   justify-content: space-between;
   margin-bottom: 25px;
   .logo{
-    height: 5rem;
+    display: flex;
+    height: 6rem;
   }
   .logo-container {
     height: 100%;
-    width: 70px;
+    width: 10%;
     padding: 25px;
   }
-
+  .brand{
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
   .options {
     width: 50%;
     height: 100%;
@@ -20,9 +26,11 @@
     align-items: center;
     justify-content: flex-end;
     font-size: 1.2rem;
+    margin-top: 10px;
     .option {
       padding: 10px 15px;
       cursor: pointer;
+      
     }
   }
 }
