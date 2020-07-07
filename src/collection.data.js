@@ -10,9 +10,9 @@ import kj3 from "./images/kurtajacket/kj3.jpg";
 import kj4 from "./images/kurtajacket/kj4.jpg";
 import kj5 from "./images/kurtajacket/kj5.jpg";
 import kj6 from "./images/kurtajacket/kj6.jpg";
-const data=
-    [
-        {
+const ShopData=
+    {
+     kurta:   {
             title: "Kurta",
             id:1,
             routeName:"kurta",
@@ -59,7 +59,7 @@ const data=
                 }
             ]
         },
-        {
+       kurtajacket: {
             title: "Kurta Jacket",
             id:2,
             routeName:"kurtajacket",
@@ -105,7 +105,8 @@ const data=
                     price: 6999
                 }
             ]
-        },{
+        },
+        accessories:{
             title: "Kurta",
             id:1,
             routeName:"kurta",
@@ -151,7 +152,8 @@ const data=
                     price: 2999
                 }
             ]
-        },{
+        },
+        indowestern:{
             title: "Kurta",
             id:1,
             routeName:"kurta",
@@ -197,7 +199,8 @@ const data=
                     price: 2999
                 }
             ]
-        },{
+        },
+        sherwani: {
             title: "Kurta",
             id:1,
             routeName:"kurta",
@@ -244,7 +247,7 @@ const data=
                 }
             ]
         }
-    ]
+    };
 
 
-export default data;
+export default ShopData;
