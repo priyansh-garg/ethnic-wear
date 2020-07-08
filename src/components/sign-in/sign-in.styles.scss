@@ -8,5 +8,15 @@
     .buttons{
         display: flex;
         justify-content: space-between;
+        @media screen  and (max-width:800px){
+            
+        }
+    }
+    @media screen  and (max-width:800px){
+        width: 80vw;
+        display: flex;
+    flex-direction: column;
+    display: block;
+    margin-bottom: 20%;
     }
 }

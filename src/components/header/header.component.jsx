@@ -10,10 +10,12 @@ import {createStructuredSelector} from "reselect";
 import { selectCartHidden } from "../../redux/toggle-cart/cart.selectors";
 import {selectCurrentUser} from "../../redux/user/user.selectors";
 const Header=({user,hidden,history})=>(
-    <div className="header">
-        <Link to="/">
+    <div>
+   <div className="header">
+        <Link to="/" className="logo-container">
             <Logo className="logo"></Logo>
             
+        
         </Link>
         <h1 className="brand" onClick={()=>history.push("/")}>Ethnic Tradition</h1>
         <div className="options">
@@ -33,6 +35,9 @@ const Header=({user,hidden,history})=>(
             <CartDropdown/>
             }
         </div>
+        
+    </div>
+    <div className="mobile-brand">Ethnic Tradition</div>
     </div>
 );
 

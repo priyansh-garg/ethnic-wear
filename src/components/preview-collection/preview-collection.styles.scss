@@ -8,10 +8,18 @@
     margin-bottom: 25px;
     font-family: 'Dancing Script', cursive;
     cursor: pointer;
+    @media screen and (max-width:800px) {
+      text-align: center;
+    }
   }
 
   .preview {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:800px) {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }
