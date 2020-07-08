@@ -75,7 +75,7 @@ class Signup extends React.Component{
                         <FormInput 
                         type="password"
                         name= "password"
-                        label="Password (should contain atleast 6 letters)"
+                        label="Password (atleast 6 letters)"
                         value={password}
                         onChange={this.handleChange}
                         required
