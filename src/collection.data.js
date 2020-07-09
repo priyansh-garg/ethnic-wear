@@ -118,7 +118,7 @@ const ShopData=
                 },
                 {
                     id:10,
-                    name:" red Cotton Kurta ",
+                    name:" Red Cotton Kurta ",
                     imageUrl: k10 ,
                     price: 1999
                 }
