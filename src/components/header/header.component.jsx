@@ -17,7 +17,7 @@ const Header=({user,hidden,history})=>(
             
         
         </Link>
-        <h1 className="brand" onClick={()=>history.push("/")}>Ethnic Tradition</h1>
+        <h1 className="brand" onClick={()=>history.push("/")}>Mangal Sherwani</h1>
         <div className="options">
             <Link className="option" to="/shop">
                 SHOP
@@ -37,7 +37,7 @@ const Header=({user,hidden,history})=>(
         </div>
         
     </div>
-    <div className="mobile-brand">Ethnic Tradition</div>
+    <div className="mobile-brand">Mangal Sherwani</div>
     </div>
 );
 
